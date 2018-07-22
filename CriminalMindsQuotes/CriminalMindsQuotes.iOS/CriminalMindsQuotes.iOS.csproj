@@ -147,13 +147,67 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
+    <PackageReference Include="Xamarin.Forms">
+      <Version>3.0.0.561731</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>11.0.2</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\CriminalMindsQuotes\CriminalMindsQuotes.csproj">
-      <Project>{ABE1BC8A-1C95-4448-965D-AEEA3AF7ED38}</Project>
+      <Project>{793A6597-68C7-4222-A557-D543C2605B67}</Project>
       <Name>CriminalMindsQuotes</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_account_box.png" />
+    <BundleResource Include="Resources\ic_account_box%402x.png" />
+    <BundleResource Include="Resources\ic_account_box%403x.png" />
+    <BundleResource Include="Resources\ic_account_circle.png" />
+    <BundleResource Include="Resources\ic_account_circle%402x.png" />
+    <BundleResource Include="Resources\ic_account_circle%403x.png" />
+    <BundleResource Include="Resources\ic_action_new.png" />
+    <BundleResource Include="Resources\ic_action_new%402x.png" />
+    <BundleResource Include="Resources\ic_action_new%403x.png" />
+    <BundleResource Include="Resources\ic_autorenew.png" />
+    <BundleResource Include="Resources\ic_autorenew%402x.png" />
+    <BundleResource Include="Resources\ic_autorenew%403x.png" />
+    <BundleResource Include="Resources\ic_featured_play_list.png" />
+    <BundleResource Include="Resources\ic_featured_play_list%402x.png" />
+    <BundleResource Include="Resources\ic_featured_play_list%403x.png" />
+    <BundleResource Include="Resources\ic_format_quote.png" />
+    <BundleResource Include="Resources\ic_format_quote%402x.png" />
+    <BundleResource Include="Resources\ic_format_quote%403x.png" />
+    <BundleResource Include="Resources\ic_home.png" />
+    <BundleResource Include="Resources\ic_home%402x.png" />
+    <BundleResource Include="Resources\ic_home%403x.png" />
+    <BundleResource Include="Resources\ic_info.png" />
+    <BundleResource Include="Resources\ic_info%402x.png" />
+    <BundleResource Include="Resources\ic_info%403x.png" />
+    <BundleResource Include="Resources\ic_people.png" />
+    <BundleResource Include="Resources\ic_people%402x.png" />
+    <BundleResource Include="Resources\ic_people%403x.png" />
+    <BundleResource Include="Resources\ic_people_outline.png" />
+    <BundleResource Include="Resources\ic_people_outline%402x.png" />
+    <BundleResource Include="Resources\ic_people_outline%403x.png" />
+    <BundleResource Include="Resources\ic_record_voice_over.png" />
+    <BundleResource Include="Resources\ic_record_voice_over_2x.png" />
+    <BundleResource Include="Resources\ic_record_voice_over_3x.png" />
+    <BundleResource Include="Resources\ic_security.png" />
+    <BundleResource Include="Resources\ic_security_2x.png" />
+    <BundleResource Include="Resources\ic_security_3x.png" />
+    <BundleResource Include="Resources\ic_settings.png" />
+    <BundleResource Include="Resources\ic_settings%402x.png" />
+    <BundleResource Include="Resources\ic_settings%403x.png" />
+    <BundleResource Include="Resources\ic_speaker_notes.png" />
+    <BundleResource Include="Resources\ic_speaker_notes%402x.png" />
+    <BundleResource Include="Resources\ic_speaker_notes%403x.png" />
+    <BundleResource Include="Resources\nav-menu-icon.png" />
+    <BundleResource Include="Resources\nav-menu-icon%402x.png" />
+    <BundleResource Include="Resources\nav-menu-icon%403x.png" />
+    <BundleResource Include="Resources\banner.jpg" />
+    <BundleResource Include="Resources\SplashScreen.png" />
   </ItemGroup>
 </Project>

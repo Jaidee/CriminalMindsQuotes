@@ -2,7 +2,16 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
-      "Xamarin.Forms/3.0.0.482510": {
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Xamarin.Forms/3.0.0.561731": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -129,7 +138,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Forms": "3.0.0.482510"
+          "Newtonsoft.Json": "11.0.2",
+          "Xamarin.Forms": "3.0.0.561731"
         },
         "compile": {
           "bin/placeholder/CriminalMindsQuotes.dll": {}
@@ -140,7 +150,16 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
-      "Xamarin.Forms/3.0.0.482510": {
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Xamarin.Forms/3.0.0.561731": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -267,7 +286,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Forms": "3.0.0.482510"
+          "Newtonsoft.Json": "11.0.2",
+          "Xamarin.Forms": "3.0.0.561731"
         },
         "compile": {
           "bin/placeholder/CriminalMindsQuotes.dll": {}
@@ -278,7 +298,16 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
-      "Xamarin.Forms/3.0.0.482510": {
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Xamarin.Forms/3.0.0.561731": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -405,7 +434,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Forms": "3.0.0.482510"
+          "Newtonsoft.Json": "11.0.2",
+          "Xamarin.Forms": "3.0.0.561731"
         },
         "compile": {
           "bin/placeholder/CriminalMindsQuotes.dll": {}
@@ -416,7 +446,16 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
-      "Xamarin.Forms/3.0.0.482510": {
+      "Newtonsoft.Json/11.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Xamarin.Forms/3.0.0.561731": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -543,7 +582,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Forms": "3.0.0.482510"
+          "Newtonsoft.Json": "11.0.2",
+          "Xamarin.Forms": "3.0.0.561731"
         },
         "compile": {
           "bin/placeholder/CriminalMindsQuotes.dll": {}
@@ -555,11 +595,40 @@
     }
   },
   "libraries": {
-    "Xamarin.Forms/3.0.0.482510": {
-      "sha512": "kq209d8qVvulrY3o+nGirENZ3kaZpEN7VWRErWcW1M+ahtDgm4BUXQJ5s9hnp1SAGxQMTMhDAVI3uk5g9NV7hA==",
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "type": "package",
-      "path": "xamarin.forms/3.0.0.482510",
+      "path": "newtonsoft.json/11.0.2",
       "files": [
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
+    "Xamarin.Forms/3.0.0.561731": {
+      "sha512": "ZnpuSybty6uZsgInJQD2QoYsjsdzPmu25EltSNJTnwgiQCW0MVZfwU6//jbt4Sf0ZfAiryi8MZFhU1I0NAP6Ew==",
+      "type": "package",
+      "path": "xamarin.forms/3.0.0.561731",
+      "files": [
+        ".signature.p7s",
         "build/netstandard1.0/Mono.Cecil.Mdb.dll",
         "build/netstandard1.0/Mono.Cecil.Pdb.dll",
         "build/netstandard1.0/Mono.Cecil.Rocks.dll",
@@ -698,7 +767,7 @@
         "lib/uap10.0/Xamarin.Forms.Platform.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.3.0.0.482510.nupkg.sha512",
+        "xamarin.forms.3.0.0.561731.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -711,38 +780,36 @@
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
       "CriminalMindsQuotes >= 1.0.0",
-      "Xamarin.Forms >= 3.0.0.482510"
+      "Newtonsoft.Json >= 11.0.2",
+      "Xamarin.Forms >= 3.0.0.561731"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Allan\\.nuget\\packages\\": {}
+    "/Users/allantranekaer/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Allan\\source\\repos\\CriminalMindsQuotes\\CriminalMindsQuotes\\CriminalMindsQuotes.iOS\\CriminalMindsQuotes.iOS.csproj",
+      "projectUniqueName": "/Users/allantranekaer/Documents/GitHub/CriminalMindsQuotes/CriminalMindsQuotes/CriminalMindsQuotes.iOS/CriminalMindsQuotes.iOS.csproj",
       "projectName": "CriminalMindsQuotes.iOS",
-      "projectPath": "C:\\Users\\Allan\\source\\repos\\CriminalMindsQuotes\\CriminalMindsQuotes\\CriminalMindsQuotes.iOS\\CriminalMindsQuotes.iOS.csproj",
-      "packagesPath": "C:\\Users\\Allan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Allan\\source\\repos\\CriminalMindsQuotes\\CriminalMindsQuotes\\CriminalMindsQuotes.iOS\\obj\\",
+      "projectPath": "/Users/allantranekaer/Documents/GitHub/CriminalMindsQuotes/CriminalMindsQuotes/CriminalMindsQuotes.iOS/CriminalMindsQuotes.iOS.csproj",
+      "packagesPath": "/Users/allantranekaer/.nuget/packages/",
+      "outputPath": "/Users/allantranekaer/Documents/GitHub/CriminalMindsQuotes/CriminalMindsQuotes/CriminalMindsQuotes.iOS/obj",
       "projectStyle": "PackageReference",
-      "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Allan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/allantranekaer/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Allan\\source\\repos\\CriminalMindsQuotes\\CriminalMindsQuotes\\CriminalMindsQuotes\\CriminalMindsQuotes.csproj": {
-              "projectPath": "C:\\Users\\Allan\\source\\repos\\CriminalMindsQuotes\\CriminalMindsQuotes\\CriminalMindsQuotes\\CriminalMindsQuotes.csproj"
+            "/Users/allantranekaer/Documents/GitHub/CriminalMindsQuotes/CriminalMindsQuotes/CriminalMindsQuotes/CriminalMindsQuotes.csproj": {
+              "projectPath": "/Users/allantranekaer/Documents/GitHub/CriminalMindsQuotes/CriminalMindsQuotes/CriminalMindsQuotes/CriminalMindsQuotes.csproj"
             }
           }
         }
@@ -753,7 +820,11 @@
         "dependencies": {
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[3.0.0.482510, )"
+            "version": "3.0.0.561731"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "11.0.2"
           }
         }
       }

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="CriminalMindsQuotes.MainMasterPage"
+             Title="Criminal Minds Quotes">
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Transparent">
+            <StackLayout.Margin>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="Android" Value="0,0,0,10"/>
+                    <On Platform="iOS" Value="0,30,0,10"/>
+                </OnPlatform>
+            </StackLayout.Margin>
+            <Image Source="banner.jpg" />
+
+            <StackLayout Orientation="Horizontal" Margin="5,0,0,5">
+                <Image>
+                    <Image.Source>
+                        <OnPlatform x:TypeArguments="FileImageSource">
+                            <On Platform="iOS" Value="ic_format_quote.png"/>
+                            <On Platform="Android" Value="ic_format_quote_black.png"/>
+                        </OnPlatform>
+                    </Image.Source>
+                </Image>                          
+                <Label x:Name="lblTodayQuotes" Text="Today Quotes" Margin="10,0,0,0" VerticalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTodayQuotesTapped" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+            
+             <StackLayout Orientation="Horizontal" Margin="5,0,0,5">
+                <Image>
+                    <Image.Source>
+                        <OnPlatform x:TypeArguments="FileImageSource">
+                            <On Platform="iOS" Value="ic_speaker_notes.png"/>
+                            <On Platform="Android" Value="ic_featured_play_list_black.png"/>
+                        </OnPlatform>
+                    </Image.Source>
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnEpisodesTapped" NumberOfTapsRequired="1"/>    
+                    </Image.GestureRecognizers>
+                </Image>                          
+                <Label x:Name="lblEpisodes" Text="Episodes" Margin="5,0,0,0" VerticalTextAlignment="Center">
+                    <Label.Margin>
+                        <OnPlatform x:TypeArguments="Thickness">
+                            <On Platform="Android" Value="5,0,0,0"/>
+                            <On Platform="iOS" Value="10,0,0,0" />
+                        </OnPlatform>
+                    </Label.Margin>
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnEpisodesTapped" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" Margin="5,0,0,5">
+                <Image>
+                    <Image.Source>
+                        <OnPlatform x:TypeArguments="FileImageSource">
+                            <On Platform="iOS" Value="ic_people.png"/>
+                            <On Platform="Android" Value="ic_people_black.png"/>
+                        </OnPlatform>
+                    </Image.Source>
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTheTeamTapped" NumberOfTapsRequired="1"/>    
+                    </Image.GestureRecognizers>
+                </Image>                          
+                <Label x:Name="lblTheTeam" Text="The BAU Team" Margin="5,0,0,0" VerticalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTheTeamTapped" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="5,0,0,5">
+                <Image>
+                    <Image.Source>
+                        <OnPlatform x:TypeArguments="FileImageSource">
+                            <On Platform="iOS" Value="ic_people_outline.png"/>
+                            <On Platform="Android" Value="ic_people_outline_black.png"/>
+                        </OnPlatform>
+                    </Image.Source>
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnRecurringActorsTapped" NumberOfTapsRequired="1"/>    
+                    </Image.GestureRecognizers>
+                </Image>                          
+                <Label x:Name="lblRecurActors" Text="Recurring Actors" Margin="5,0,0,0" VerticalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnRecurringActorsTapped" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+
+           <BoxView BackgroundColor="Gray" HeightRequest="1" />
+
+            <StackLayout Orientation="Horizontal" Margin="5,0,0,5">
+                <Image>
+                    <Image.Source>
+                        <OnPlatform x:TypeArguments="FileImageSource">
+                            <On Platform="iOS" Value="ic_settings.png"/>
+                            <On Platform="Android" Value="ic_settings_white.png"/>
+                        </OnPlatform>
+                    </Image.Source>
+                    <Image.BackgroundColor>
+                        <OnPlatform x:TypeArguments="Color">
+                            <On Platform="Android" Value="Black"/>
+                        </OnPlatform>
+                    </Image.BackgroundColor>
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnSettingTapped" NumberOfTapsRequired="1"/>    
+                    </Image.GestureRecognizers>
+                </Image>       
+                <Label x:Name="lblSettings" Text="Settings" Margin="10,0,0,0" VerticalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnSettingTapped" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="5,0,0,5">
+                <Image>
+                    <Image.Source>
+                        <OnPlatform x:TypeArguments="FileImageSource">
+                            <On Platform="iOS" Value="ic_info.png"/>
+                            <On Platform="Android" Value="ic_info_white.png"/>
+                        </OnPlatform>
+                    </Image.Source>
+                    <Image.BackgroundColor>
+                        <OnPlatform x:TypeArguments="Color">
+                            <On Platform="Android" Value="Black"/>
+                        </OnPlatform>
+                    </Image.BackgroundColor>
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnAboutTapped" NumberOfTapsRequired="1"/>    
+                    </Image.GestureRecognizers>
+                </Image>       
+                <Label x:Name="lblAbout" Text="About" Margin="10,0,0,0" VerticalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnAboutTapped" NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

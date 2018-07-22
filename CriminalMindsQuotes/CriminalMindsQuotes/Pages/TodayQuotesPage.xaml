@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="CriminalMindsQuotes.Pages.TodayQuotesPage"
+             x:Name="ThePage" Title="Today Quotes" >
+
+    <ContentPage.Content>
+        <StackLayout>
+        <StackLayout Margin="15" IsVisible="{Binding Source={x:Reference ThePage}, Path=IsEnabled}">
+            <StackLayout>
+                <Label x:Name="Quote1Text" Text="" />
+                <Label x:Name="Quote1Author" Text="" HorizontalOptions="End" 
+                       FontSize="Small" FontAttributes="Italic" />
+                <Label x:Name="Quote1Episode" Text="" 
+                       FontSize="Small" FontAttributes="Italic"/>
+                <Label x:Name="Quote1QuoteBy" Text="" 
+                       FontSize="Small" FontAttributes="Italic"/>               
+            </StackLayout>
+            <StackLayout Margin="0,20">
+                <Label x:Name="Quote2Text" Text="" />
+                <Label x:Name="Quote2Author" Text="" HorizontalOptions="End" 
+                       FontSize="Small" FontAttributes="Italic" />
+                <Label x:Name="Quote2Episode" Text="" 
+                       FontSize="Small" FontAttributes="Italic"/>
+                <Label x:Name="Quote2QuoteBy" Text="" 
+                       FontSize="Small" FontAttributes="Italic"/>               
+            </StackLayout>
+        </StackLayout>
+        <StackLayout IsVisible="{Binding Source={x:Reference ThePage}, Path=IsBusy}"
+                         HorizontalOptions="Center" VerticalOptions="CenterAndExpand"
+                         Padding="20">
+                <Label Text="Loading Data..." TextColor="Gray" HorizontalOptions="Center"/>
+                <ActivityIndicator IsRunning="{Binding Source={x:Reference ThePage}, Path=IsBusy}"
+                                   Color="Accent" />
+                                
+        </StackLayout>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="CriminalMindsQuotes.Pages.PrivarcyPage"
+             Title="Privarcy">
+    
+    <ContentPage.Icon>
+        <OnPlatform x:TypeArguments="FileImageSource">
+            <On Platform="iOS" Value="ic_security.png"/> 
+        </OnPlatform>
+    </ContentPage.Icon>
+
+    <ContentPage.Content>
+        <StackLayout Margin="20,10,10,0">
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Privacy Policy" FontAttributes="Bold"/>
+                    <Label x:Name="PrivacyText_General" />
+                    <Label Text="What we collect" FontAttributes="Bold" Margin="0,10,0,0"/>
+                    <Label x:Name="PrivacyText_Collect" />
+                    <Label Text="Security" FontAttributes="Bold" Margin="0,10,0,0"/>
+                    <Label x:Name="PrivacyText_Security"/>
+                    <Label Text="Links" FontAttributes="Bold" Margin="0,10,0,0"/>
+                    <Label x:Name="PrivacyText_Links"/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>       
+    </ContentPage.Content>
+</ContentPage>

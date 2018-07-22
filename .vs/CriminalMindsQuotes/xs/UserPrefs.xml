@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{3F635486-5C4A-4234-B0A8-A2AD06D83C32}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CriminalMindsQuotes/CriminalMindsQuotes/Pages/GuestEpisodeListPage.xaml.cs">
+    <Files>
+      <File FileName="CriminalMindsQuotes/CriminalMindsQuotes/MainMasterDetailPage.cs" Line="49" Column="27" />
+      <File FileName="CriminalMindsQuotes/CriminalMindsQuotes/Pages/RecurActorsPage.xaml" Line="31" Column="1" />
+      <File FileName="CriminalMindsQuotes/CriminalMindsQuotes/Pages/RecurActorsPage.xaml.cs" Line="57" Column="1" />
+      <File FileName="CriminalMindsQuotes/CriminalMindsQuotes/Pages/ActorNavPage.xaml.cs" Line="30" Column="48" />
+      <File FileName="CriminalMindsQuotes/CriminalMindsQuotes/Pages/GuestEpisodeListPage.xaml.cs" Line="39" Column="89" />
+      <File FileName="CriminalMindsQuotes/CriminalMindsQuotes/Pages/CharacterPage.xaml.cs" Line="24" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CriminalMindsQuotes.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E7EE0DDE-30BC-44A7-9388-70449DD96D3D" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x64" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="CriminalMindsQuotes/Views/TodayQuotesPage.xaml" line="11" offsetX="-1" offsetY="-1" expression="Content" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.CriminalMindsQuotes.Android PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+</Properties>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="CriminalMindsQuotes.Pages.EpisodeDialogPage"
+             Title="Dialogues">
+        
+    <ContentPage.Icon>
+        <OnPlatform x:TypeArguments="FileImageSource">
+            <On Platform="iOS" Value="ic_record_voice_over.png"/> 
+        </OnPlatform>   
+    </ContentPage.Icon>
+
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label x:Name="oDialog" Margin="10,0,0,10"/>
+            <WebView x:Name="HTMLView" VerticalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

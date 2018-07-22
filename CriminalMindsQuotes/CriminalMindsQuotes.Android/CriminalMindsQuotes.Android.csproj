@@ -48,12 +48,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
     <PackageReference Include="Xamarin.Android.Support.Design" Version="25.4.0.2" />
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="25.4.0.2" />
     <PackageReference Include="Xamarin.Android.Support.v4" Version="25.4.0.2" />
     <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="25.4.0.2" />
     <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="25.4.0.2" />
+    <PackageReference Include="Xamarin.Forms">
+      <Version>3.0.0.561731</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>11.0.2</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -82,6 +87,40 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\ic_action_new.png" />
+    <AndroidResource Include="Resources\drawable\ic_autorenew.png" />
+    <AndroidResource Include="Resources\drawable\ic_autorenew_white.png" />
+    <AndroidResource Include="Resources\drawable\ic_featured_play_list_black.png" />
+    <AndroidResource Include="Resources\drawable\ic_format_quote_black.png" />
+    <AndroidResource Include="Resources\drawable\ic_home_white.png" />
+    <AndroidResource Include="Resources\drawable\ic_info_white.png" />
+    <AndroidResource Include="Resources\drawable\ic_people_black.png" />
+    <AndroidResource Include="Resources\drawable\ic_people_outline_black.png" />
+    <AndroidResource Include="Resources\drawable\ic_settings_white.png" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_new.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_autorenew.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_featured_play_list_black.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_format_quote_black.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_people_black.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_people_outline_black.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_new.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_autorenew.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_featured_play_list_black.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_format_quote_black.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_people_black.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_people_outline_black.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_new.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_autorenew.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_featured_play_list_black.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_format_quote_black.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_people_black.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_people_outline_black.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable\banner.jpg" />
+    <AndroidResource Include="Resources\drawable\SplashScreen.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
@@ -92,7 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CriminalMindsQuotes\CriminalMindsQuotes.csproj">
-      <Project>{ABE1BC8A-1C95-4448-965D-AEEA3AF7ED38}</Project>
+      <Project>{793A6597-68C7-4222-A557-D543C2605B67}</Project>
       <Name>CriminalMindsQuotes</Name>
     </ProjectReference>
   </ItemGroup>

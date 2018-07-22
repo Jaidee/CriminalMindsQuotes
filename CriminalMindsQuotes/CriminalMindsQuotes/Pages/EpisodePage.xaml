@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="CriminalMindsQuotes.Pages.EpisodePage"
+             x:Name="ThePage" Title="Episodes" >
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Margin="15" IsVisible="{Binding Source={x:Reference ThePage}, Path=IsEnabled}">
+                <ListView ItemsSource="{Binding}"
+                      ItemTapped="OnItemTapped"
+                      HasUnevenRows="true"
+                      IsGroupingEnabled="true"
+                      GroupDisplayBinding="{Binding Key}"
+                      GroupShortNameBinding="{Binding Key}"
+                      SeparatorVisibility="None"
+                      BackgroundColor="Transparent">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell Height="60">
+                                <StackLayout Margin="15,0,15,0" BackgroundColor="Transparent">
+                                    <Label Text="{Binding Title}" FontAttributes="Bold" />
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Column="0" Text="{Binding EpisodeId}"  
+                                               FontSize="Small" FontAttributes="Italic" Margin="0,0,10,0" />
+                                        <Label Grid.Column="1" Text="{Binding AirDate, StringFormat='Airdate: {0:d}'}" 
+                                               FontSize="Small" FontAttributes="Italic" />                                
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                    <ListView.GroupHeaderTemplate>
+                        <DataTemplate>
+                            <TextCell TextColor="Blue" DetailColor="Olive"  
+                                Text="{Binding Key, StringFormat='Season {0}'}"
+                                Detail="{Binding Count, StringFormat='{0} episodes.'}"/>
+                        </DataTemplate>
+                    </ListView.GroupHeaderTemplate>
+                </ListView>
+            </StackLayout>
+            <StackLayout IsVisible="{Binding Source={x:Reference ThePage}, Path=IsBusy}"
+                     HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Padding="20">
+                <Label Text="Loading Data..." TextColor="Gray" HorizontalOptions="Center" />
+                <ActivityIndicator IsRunning="{Binding Source={x:Reference ThePage}, Path=IsBusy}" Color="Accent" >
+                </ActivityIndicator>
+            </StackLayout>   
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

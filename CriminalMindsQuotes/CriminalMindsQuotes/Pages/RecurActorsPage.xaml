@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="CriminalMindsQuotes.Pages.RecurActorsPage"
+             x:Name="ThePage" Title="Recurring Actors">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Margin="0,15,0,15" IsVisible="{Binding Source={x:Reference ThePage}, Path=IsEnabled}">
+                <ListView ItemsSource="{Binding}"
+                          ItemTapped="OnItemTapped"
+                          SeparatorVisibility="None"
+                          BackgroundColor="Transparent">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell Text="{Binding CharacterName}" Detail="{Binding WorkTitle}"
+                                ImageSource="{Binding ImageUrl}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            <StackLayout IsVisible="{Binding Source={x:Reference ThePage}, Path=IsBusy}"
+                        HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Padding="20">
+                <Label Text="Loading Data..." TextColor="Gray" HorizontalOptions="Center" />
+                <ActivityIndicator IsRunning="{Binding Source={x:Reference ThePage}, Path=IsBusy}" Color="Accent" >
+                </ActivityIndicator>
+            </StackLayout>
+        </StackLayout>       
+    </ContentPage.Content>
+</ContentPage>

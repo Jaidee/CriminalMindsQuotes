@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="CriminalMindsQuotes.Pages.GuestEpisodeListPage"
+             Title="Episodes" x:Name="ThePage">
+    
+    <ContentPage.Icon>
+        <OnPlatform x:TypeArguments="FileImageSource">
+            <On Platform="iOS" Value="ic_featured_play_list.png"/> 
+        </OnPlatform>   
+    </ContentPage.Icon>
+
+    <ContentPage.Content>
+        <StackLayout Margin="20,10,20,0">
+            <Label x:Name="EpisodeListHeader" Text=""/>
+            <ListView ItemsSource="{Binding .}"
+                      ItemTapped="OnItemTapped"
+                      SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>>
+                        <ViewCell Height="60">
+                        <StackLayout>
+                            <Label Text="{Binding Title}" FontAttributes="Bold"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding EpisodeKey}" FontSize="Small"/>
+                                <Label Text="{Binding EpisodeId, StringFormat='- {0}'}" FontSize="Small"/>
+                            </StackLayout>
+                        </StackLayout>
+                        </ViewCell>    
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView> 
+            <StackLayout IsVisible="{Binding Source={x:Reference ThePage}, Path=IsBusy}"
+                 HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Padding="20">
+                <Label Text="Loading Data..." TextColor="Gray" HorizontalOptions="Center" />
+                <ActivityIndicator IsRunning="{Binding Source={x:Reference ThePage}, Path=IsBusy}" Color="Accent" >
+                </ActivityIndicator>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

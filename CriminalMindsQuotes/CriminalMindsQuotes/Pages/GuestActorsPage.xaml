@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="CriminalMindsQuotes.Pages.GuestActorsPage"
+             x:Name="ThePage" Title="Guests">
+
+    <ContentPage.Icon>
+        <OnPlatform x:TypeArguments="FileImageSource">
+            <On Platform="iOS" Value="ic_people_outline.png"/> 
+        </OnPlatform>   
+    </ContentPage.Icon>
+
+    <ContentPage.Content>
+        <StackLayout Margin="20,10,20,0">
+            <ListView ItemsSource="{Binding .}"
+                      ItemTapped="OnItemTapped"
+                      HasUnevenRows="true"
+                      IsGroupingEnabled="true"
+                      GroupDisplayBinding="{Binding Key}"
+                      SeparatorVisibility="None">
+                 <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="15,0,15,0">
+                                <Label Text="{Binding ActorName}" />
+                                <Label Text="{Binding CharacterName, StringFormat='as {0}'}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate> 
+                <ListView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Key, StringFormat='{0} Actors'}"/>
+                    </DataTemplate>    
+                </ListView.GroupHeaderTemplate>
+            </ListView>
+        </StackLayout>    
+    </ContentPage.Content>
+</ContentPage>

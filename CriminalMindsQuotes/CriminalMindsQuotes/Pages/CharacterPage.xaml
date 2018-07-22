@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="CriminalMindsQuotes.Pages.CharacterPage"
+             Title="Character">
+
+    <ContentPage.Icon>
+        <OnPlatform x:TypeArguments="FileImageSource">
+            <On Platform="iOS" Value="ic_account_circle.png"/>
+        </OnPlatform>
+    </ContentPage.Icon>
+      
+    <ContentPage.Content>
+        <StackLayout Margin="20,10,20,0">
+            <Label Text="{Binding WorkTitle}" />
+            <Image Source="{Binding ImageUrl}" HeightRequest="200" HorizontalOptions="Center"/>
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="{Binding Description}" /> 
+                    <Label x:Name="CharWebLink" Text="" Margin="0,10,0,0">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnCharWebLinkTapped" NumberOfTapsRequired="1"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

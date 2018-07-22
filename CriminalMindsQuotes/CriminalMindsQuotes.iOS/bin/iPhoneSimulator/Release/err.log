@@ -1,0 +1,93 @@
+objc[432]: Class VCWeakObjectHolder is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/ViceroyTrace.framework/ViceroyTrace (0x12cbfc4d0) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AVConference.framework/AVConference (0x12d834e38). One of the two will be used. Which one is undefined.
+2018-07-21 14:36:00.036 CriminalMindsQuotes.iOS[432:8188540] 
+Unhandled Exception:
+System.NullReferenceException: Object reference not set to an instance of an object
+  at System.Net.Http.RuntimeOptions.Read () [0x00035] in <31c0de6386bf40f9b15f4855113f626d>:0 
+  at System.Net.Http.RuntimeOptions.GetHttpMessageHandler () [0x00000] in <31c0de6386bf40f9b15f4855113f626d>:0 
+  at System.Net.Http.HttpClient.GetDefaultHandler () [0x00000] in <31c0de6386bf40f9b15f4855113f626d>:0 
+  at System.Net.Http.HttpClient..ctor () [0x00000] in <31c0de6386bf40f9b15f4855113f626d>:0 
+  at CriminalMindsQuotes.Data.EpisodeData.GetClient () [0x00000] in <9f64cd5ffbd241749fbe6fc2427789c2>:0 
+  at CriminalMindsQuotes.Data.EpisodeData+<LoadAsyncId>d__3.MoveNext () [0x00027] in <9f64cd5ffbd241749fbe6fc2427789c2>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <b238a3153e534349ad10ed0787f2157a>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0003e] in <b238a3153e534349ad10ed0787f2157a>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <b238a3153e534349ad10ed0787f2157a>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <b238a3153e534349ad10ed0787f2157a>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <b238a3153e534349ad10ed0787f2157a>:0 
+  at CriminalMindsQuotes.Pages.ActorQuotePage+<LoadData>d__4.MoveNext () [0x00276] in <9f64cd5ffbd241749fbe6fc2427789c2>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <b238a3153e534349ad10ed0787f2157a>:0 
+  at System.Runtime.CompilerServices.AsyncMethodBuilderCore+<>c.<ThrowAsync>b__6_0 (System.Object state) [0x00000] in <b238a3153e534349ad10ed0787f2157a>:0 
+  at UIKit.UIKitSynchronizationContext+<>c__DisplayClass1_0.<Post>b__0 () [0x00000] in <0b60c1467e7449608ac42f9c7bbfdd05>:0 
+  at Foundation.NSAsyncActionDispatcher.Apply () [0x00000] in <0b60c1467e7449608ac42f9c7bbfdd05>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at (wrapper managed-to-native) UIKit.UIApplication.UIApplicationMain(int,string[],intptr,intptr)
+  at UIKit.UIApplication.Main (System.String[] args, System.IntPtr principal, System.IntPtr delegate) [0x00005] in <0b60c1467e7449608ac42f9c7bbfdd05>:0 
+  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) [0x0002c] in <0b60c1467e7449608ac42f9c7bbfdd05>:0 
+  at CriminalMindsQuotes.iOS.Application.Main (System.String[] args) [0x00000] in <885598c753394dbb9beecb1b291826b1>:0 
+2018-07-21 14:36:00.038 CriminalMindsQuotes.iOS[432:8188540] Unhandled managed exception:
+Object reference not set to an instance of an object (System.NullReferenceException)
+  at System.Net.Http.RuntimeOptions.Read () [0x00035] in <31c0de6386bf40f9b15f4855113f626d>:0 
+  at System.Net.Http.RuntimeOptions.GetHttpMessageHandler () [0x00000] in <31c0de6386bf40f9b15f4855113f626d>:0 
+  at System.Net.Http.HttpClient.GetDefaultHandler () [0x00000] in <31c0de6386bf40f9b15f4855113f626d>:0 
+  at System.Net.Http.HttpClient..ctor () [0x00000] in <31c0de6386bf40f9b15f4855113f626d>:0 
+  at CriminalMindsQuotes.Data.EpisodeData.GetClient () [0x00000] in <9f64cd5ffbd241749fbe6fc2427789c2>:0 
+  at CriminalMindsQuotes.Data.EpisodeData+<LoadAsyncId>d__3.MoveNext () [0x00027] in <9f64cd5ffbd241749fbe6fc2427789c2>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <b238a3153e534349ad10ed0787f2157a>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess (System.Threading.Tasks.Task task) [0x0003e] in <b238a3153e534349ad10ed0787f2157a>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification (System.Threading.Tasks.Task task) [0x00028] in <b238a3153e534349ad10ed0787f2157a>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd (System.Threading.Tasks.Task task) [0x00008] in <b238a3153e534349ad10ed0787f2157a>:0 
+  at System.Runtime.CompilerServices.TaskAwaiter`1[TResult].GetResult () [0x00000] in <b238a3153e534349ad10ed0787f2157a>:0 
+  at CriminalMindsQuotes.Pages.ActorQuotePage+<LoadData>d__4.MoveNext () [0x00276] in <9f64cd5ffbd241749fbe6fc2427789c2>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <b238a3153e534349ad10ed0787f2157a>:0 
+  at System.Runtime.CompilerServices.AsyncMethodBuilderCore+<>c.<ThrowAsync>b__6_0 (System.Object state) [0x00000] in <b238a3153e534349ad10ed0787f2157a>:0 
+  at UIKit.UIKitSynchronizationContext+<>c__DisplayClass1_0.<Post>b__0 () [0x00000] in <0b60c1467e7449608ac42f9c7bbfdd05>:0 
+  at Foundation.NSAsyncActionDispatcher.Apply () [0x00000] in <0b60c1467e7449608ac42f9c7bbfdd05>:0 
+--- End of stack trace from previous location where exception was thrown ---
+  at (wrapper managed-to-native) UIKit.UIApplication.UIApplicationMain(int,string[],intptr,intptr)
+  at UIKit.UIApplication.Main (System.String[] args, System.IntPtr principal, System.IntPtr delegate) [0x00005] in <0b60c1467e7449608ac42f9c7bbfdd05>:0 
+  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) [0x0002c] in <0b60c1467e7449608ac42f9c7bbfdd05>:0 
+  at CriminalMindsQuotes.iOS.Application.Main (System.String[] args) [0x00000] in <885598c753394dbb9beecb1b291826b1>:0 
+2018-07-21 14:36:00.039 CriminalMindsQuotes.iOS[432:8188540] critical: Stacktrace:
+
+2018-07-21 14:36:00.039 CriminalMindsQuotes.iOS[432:8188540] critical: 
+Native stacktrace:
+
+2018-07-21 14:36:00.093 CriminalMindsQuotes.iOS[432:8188540] critical: 	0   CriminalMindsQuotes.iOS             0x0000000105587994 mono_handle_native_crash + 244
+2018-07-21 14:36:00.093 CriminalMindsQuotes.iOS[432:8188540] critical: 	1   libsystem_platform.dylib            0x00000001164bff5a _sigtramp + 26
+2018-07-21 14:36:00.093 CriminalMindsQuotes.iOS[432:8188540] critical: 	2   ???                                 0x0000000105b566d8 0x0 + 4390741720
+2018-07-21 14:36:00.094 CriminalMindsQuotes.iOS[432:8188540] critical: 	3   libsystem_c.dylib                   0x00000001160ffc97 abort + 127
+2018-07-21 14:36:00.094 CriminalMindsQuotes.iOS[432:8188540] critical: 	4   CriminalMindsQuotes.iOS             0x0000000105752f72 xamarin_unhandled_exception_handler + 34
+2018-07-21 14:36:00.094 CriminalMindsQuotes.iOS[432:8188540] critical: 	5   CriminalMindsQuotes.iOS             0x000000010560dfe4 mono_invoke_unhandled_exception_hook + 148
+2018-07-21 14:36:00.094 CriminalMindsQuotes.iOS[432:8188540] critical: 	6   CriminalMindsQuotes.iOS             0x00000001055876d9 mono_handle_exception_internal + 6105
+2018-07-21 14:36:00.094 CriminalMindsQuotes.iOS[432:8188540] critical: 	7   CriminalMindsQuotes.iOS             0x0000000105585ef9 mono_handle_exception + 25
+2018-07-21 14:36:00.094 CriminalMindsQuotes.iOS[432:8188540] critical: 	8   CriminalMindsQuotes.iOS             0x00000001054f44bf mono_amd64_throw_exception + 143
+2018-07-21 14:36:00.094 CriminalMindsQuotes.iOS[432:8188540] critical: 	9   ???                                 0x000000012ed46827 0x0 + 5080639527
+2018-07-21 14:36:00.095 CriminalMindsQuotes.iOS[432:8188540] critical: 	10  CriminalMindsQuotes.iOS             0x0000000105453ecc _ZL31native_to_managed_trampoline_20P11objc_objectP13objc_selectorPP11_MonoMethodj + 284
+2018-07-21 14:36:00.095 CriminalMindsQuotes.iOS[432:8188540] critical: 	11  CriminalMindsQuotes.iOS             0x0000000105458464 -[__MonoMac_NSAsyncActionDispatcher xamarinApplySelector] + 52
+2018-07-21 14:36:00.095 CriminalMindsQuotes.iOS[432:8188540] critical: 	12  Foundation                          0x0000000110633d5e __NSThreadPerformPerform + 330
+2018-07-21 14:36:00.095 CriminalMindsQuotes.iOS[432:8188540] critical: 	13  CoreFoundation                      0x0000000113fb3bb1 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17
+2018-07-21 14:36:00.095 CriminalMindsQuotes.iOS[432:8188540] critical: 	14  CoreFoundation                      0x0000000113f984af __CFRunLoopDoSources0 + 271
+2018-07-21 14:36:00.095 CriminalMindsQuotes.iOS[432:8188540] critical: 	15  CoreFoundation                      0x0000000113f97a6f __CFRunLoopRun + 1263
+2018-07-21 14:36:00.096 CriminalMindsQuotes.iOS[432:8188540] critical: 	16  CoreFoundation                      0x0000000113f9730b CFRunLoopRunSpecific + 635
+2018-07-21 14:36:00.096 CriminalMindsQuotes.iOS[432:8188540] critical: 	17  GraphicsServices                    0x00000001185d9a73 GSEventRunModal + 62
+2018-07-21 14:36:00.096 CriminalMindsQuotes.iOS[432:8188540] critical: 	18  UIKit                               0x000000010e438057 UIApplicationMain + 159
+2018-07-21 14:36:00.096 CriminalMindsQuotes.iOS[432:8188540] critical: 	19  ???                                 0x0000000132ceb428 0x0 + 5147374632
+2018-07-21 14:36:00.096 CriminalMindsQuotes.iOS[432:8188540] critical: 	20  ???                                 0x0000000132ceb293 0x0 + 5147374227
+2018-07-21 14:36:00.097 CriminalMindsQuotes.iOS[432:8188540] critical: 	21  CriminalMindsQuotes.iOS             0x0000000105598b83 mono_jit_runtime_invoke + 1443
+2018-07-21 14:36:00.097 CriminalMindsQuotes.iOS[432:8188540] critical: 	22  CriminalMindsQuotes.iOS             0x000000010566dcaf mono_runtime_invoke_checked + 127
+2018-07-21 14:36:00.097 CriminalMindsQuotes.iOS[432:8188540] critical: 	23  CriminalMindsQuotes.iOS             0x00000001056731ee mono_runtime_exec_main_checked + 110
+2018-07-21 14:36:00.097 CriminalMindsQuotes.iOS[432:8188540] critical: 	24  CriminalMindsQuotes.iOS             0x00000001054f396f mono_jit_exec + 287
+2018-07-21 14:36:00.097 CriminalMindsQuotes.iOS[432:8188540] critical: 	25  CriminalMindsQuotes.iOS             0x0000000105759c8d xamarin_main + 1309
+2018-07-21 14:36:00.098 CriminalMindsQuotes.iOS[432:8188540] critical: 	26  CriminalMindsQuotes.iOS             0x00000001054b28e0 main + 80
+2018-07-21 14:36:00.098 CriminalMindsQuotes.iOS[432:8188540] critical: 	27  libdyld.dylib                       0x0000000115398955 start + 1
+2018-07-21 14:36:00.098 CriminalMindsQuotes.iOS[432:8188540] critical: 	28  ???                                 0x0000000000000001 0x0 + 1
+2018-07-21 14:36:00.098 CriminalMindsQuotes.iOS[432:8188540] critical: 
+=================================================================
+Got a SIGABRT while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+
